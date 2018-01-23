@@ -1,7 +1,7 @@
 # sparks-sentinel
 Sparks sentinel Docker container
 
-> See https://github.com/blocksheep/sparks-sentinel for a Sparks wallet docker container.
+> See https://github.com/blocksheep/sparks for a Sparks wallet docker container.
 
 # Usage
 ```
