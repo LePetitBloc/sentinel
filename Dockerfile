@@ -1,5 +1,8 @@
 FROM debian:jessie
 
+ENV SENTINEL_DEBUG 1
+ENV SENTINEL_CONFIG "/sentinel/conf/sentinel.conf"
+
 RUN apt-get update -y \
 	&& apt-get install -y \
 	build-essential \
@@ -10,16 +13,14 @@ RUN apt-get update -y \
 	git
 
 RUN cd / \
-	&& mkdir /sentinel \
-	&& git clone https://github.com/sparkscrypto/sentinel.git sentinel \
+	&& git clone https://github.com/sparkscrypto/sentinel.git \
 	&& cd sentinel \
 	&& export LC_ALL=C \
 	&& virtualenv ./venv \
 	&& ./venv/bin/pip install -r requirements.txt
 
-COPY ./sentinel.conf /sentinel/sentinel.conf
-
-ENV SENTINEL_DEBUG 1
+COPY ./conf/sentinel.conf $SENTINEL_CONFIG
+COPY ./conf/sparks.conf /sentinel/conf/sparks.conf
 
 WORKDIR /sentinel
 
