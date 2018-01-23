@@ -7,4 +7,4 @@ Sparks sentinel Docker container
 `docker build .`
 
 # Authors
-Originally created by @phpgeekfr & @Phylante
+Originally created by [@phpgeekfr](https://github.com/phpgeekfr) & [@Phylante](https://github.com/Phylante)
