@@ -26,7 +26,7 @@ Sentinel is compatible with some **Dash** core forks:
 * https://github.com/dashpay/sentinel
 
 ## Development
-1. Build the and tag the image:
+1. Build and tag the image:
 ```
 docker build -t lepetitbloc/sentinel .
 ```
