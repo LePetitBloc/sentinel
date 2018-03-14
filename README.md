@@ -1,5 +1,11 @@
 # Sentinel
-Sentinel Dockerfile.
+
+[![Build Status][travis-svg]][travis-url]
+
+Docker image for Sentinel.
+
+> Sentinel is an autonomous agent for persisting, processing and automating [...] governance objects and tasks [...]
+> https://github.com/dashpay/sentinel
 
 ## Usage
 ```
@@ -34,3 +40,6 @@ dgoss run lepetitbloc/sentinel
 
 ## Authors
 Originally inspired by [@phpgeekfr](https://github.com/phpgeekfr) & [@Phylante](https://github.com/Phylante)
+
+[travis-svg]: https://travis-ci.org/LePetitBloc/sentinel.svg?branch=master
+[travis-url]: https://travis-ci.org/LePetitBloc/sentinel
