@@ -1,0 +1,17 @@
+file:
+  /usr/local/bin/python:
+    exists: true
+  /sentinel/bin/sentinel.py:
+    exists: true
+    filetype: file
+  /root/.dashcore/dash.conf:
+    exists: true
+    filetype: file
+    contains:
+      - rpcuser
+      - rpcpassword
+  /sentinel/conf/sentinel.conf:
+    exists: true
+    filetype: file
+    contains:
+      - dash_conf

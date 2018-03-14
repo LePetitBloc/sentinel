@@ -1,0 +1,13 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+before_install:
+  - curl -L https://goss.rocks/install | sudo sh
+  - docker build -t lepetitbloc/sentinel .
+
+script:
+  - dgoss run lepetitbloc/sentinel
