@@ -12,6 +12,11 @@ Docker image for Sentinel.
 docker run lepetitbloc/sentinel
 ```
 
+### Environment variables
+* `SENTINEL_DEBUG` either `1` or `0`
+* `SENTINEL_CONFIG` path to the sentinel configuration file (`/sentinel/conf/sentinel.conf` by default)
+* `LC_ALL` to overrides [localisation settings](https://www.gnu.org/software/gettext/manual/html_node/Locale-Environment-Variables.html#Locale-Environment-Variables) (`C` by default, for default)
+
 ## Compatible core Wallets
 Sentinel is compatible with some **Dash** core forks:
 * [Sparks](https://github.com/lepetitbloc/sparksd)
