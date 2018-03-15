@@ -23,10 +23,6 @@ The Dash Sentinel image should be compatible with most forks, but as configurati
 * [`lepetitbloc/sentinel-crowdcoin`](https://hub.docker.com/r/lepetitbloc/sentinel-crowdcoin/) built from https://github.com/sparkscrypto/sentinel
 * ...
 
-## Changelog
-* Use `develop` branch of [dashpay/sentinel](https://github.com/dashpay/sentinel) for now, to allow usage of the `rpchost` config key (@see [#31](https://github.com/dashpay/sentinel/pull/31))
-* Use the Dash generic implementation of Sentinel.
-
 ## Resources
 * https://github.com/dashpay/sentinel
 
