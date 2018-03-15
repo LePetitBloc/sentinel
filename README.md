@@ -17,10 +17,10 @@ docker run lepetitbloc/sentinel
 * `SENTINEL_CONFIG` path to the sentinel configuration file (`/sentinel/conf/sentinel.conf` by default)
 * `LC_ALL` to overrides [localisation settings](https://www.gnu.org/software/gettext/manual/html_node/Locale-Environment-Variables.html#Locale-Environment-Variables) (`C` by default, for default)
 
-## Compatible core Wallets
-Sentinel is compatible with some **Dash** core forks:
-* [Sparks](https://github.com/lepetitbloc/sparksd)
-* [Crowdcoin](https://hub.docker.com/r/lepetitbloc/crowdcoind/)
+## Variants
+The Dash Sentinel image should be compatible with most forks, but as configurations may vary here is a list of dedicated image variations:
+* [`lepetitbloc/sentinel-sparks`](https://hub.docker.com/r/lepetitbloc/sentinel-sparks/) built from https://github.com/crowdcoinChain/sentinelLinux
+* [`lepetitbloc/sentinel-crowdcoin`](https://hub.docker.com/r/lepetitbloc/sentinel-crowdcoin/) built from https://github.com/sparkscrypto/sentinel
 * ...
 
 ## Changelog
