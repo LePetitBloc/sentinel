@@ -39,6 +39,17 @@ curl -fsSL https://goss.rocks/install | sh
 dgoss run lepetitbloc/sentinel
 ```
 
+## Troubleshooting
+>**\[Errno 104] Connection reset by peer**  \
+> *or*  \
+>**\[Errno 32] Broken pipe** *with Python 3.\**  \
+> *or*  \
+>**BadStatusLine** *with Python 2.\**
+
+In any of these cases, it means the server hang-up on you. You reach the server and your credentials are probrably right but your IP might not be allowed.
+Change the value of `rpcallowip`.
+> :pushpin: Don't forget you can add more than one `rpcallowip` line in your configuration file.
+
 ## Authors
 Originally inspired by [@phpgeekfr](https://github.com/phpgeekfr) & [@Phylante](https://github.com/Phylante)
 
