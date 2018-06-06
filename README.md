@@ -19,8 +19,8 @@ docker run lepetitbloc/sentinel
 
 ## Variants
 The Dash Sentinel image should be compatible with most forks, but as configurations may vary here is a list of dedicated image variations:
-* [`lepetitbloc/sentinel-sparks`](https://hub.docker.com/r/lepetitbloc/sentinel-sparks/) built from https://github.com/crowdcoinChain/sentinelLinux
-* [`lepetitbloc/sentinel-crowdcoin`](https://hub.docker.com/r/lepetitbloc/sentinel-crowdcoin/) built from https://github.com/sparkscrypto/sentinel
+* [`lepetitbloc/sentinel-sparks`](https://hub.docker.com/r/lepetitbloc/sentinel-sparks/) built from https://github.com/sparkscrypto/sentinel
+* [`lepetitbloc/sentinel-crowdcoin`](https://hub.docker.com/r/lepetitbloc/sentinel-crowdcoin/) built from https://github.com/crowdcoinChain/sentinelLinux
 * ...
 
 ## Resources
@@ -46,7 +46,7 @@ dgoss run lepetitbloc/sentinel
 > *or*  \
 >**BadStatusLine** *with Python 2.\**
 
-In any of these cases, it means the server hang-up on you. You reach the server and your credentials are probrably right but your IP might not be allowed.
+In any of these cases, it means the server hang-up on you. You reach the server and your credentials are probably right but your IP might not be allowed.
 Change the value of `rpcallowip`.
 > :pushpin: Don't forget you can add more than one `rpcallowip` line in your configuration file.
 
