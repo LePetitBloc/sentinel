@@ -15,8 +15,8 @@ docker run lepetitbloc/sentinel
 You should specify your configuration and the database directory as volumes:
 ```
 docker run \
--v /home/crowdcoin/masternodes/mn01/.crowdcoincore/crowdcoin.conf:/sentinel/.dashcore/dash.conf
--v /home/crowdcoin/masternodes/mn01/sentinel/database:/sentinel/database
+-v /home/dash/masternodes/mn01/.dashcore/dash.conf:/sentinel/.dashcore/dash.conf
+-v /home/dash/masternodes/mn01/sentinel/database:/sentinel/database
 --network host
 lepetitbloc/sentinel
 ```
@@ -27,7 +27,7 @@ lepetitbloc/sentinel
 * `SENTINEL_CONFIG` path to the sentinel configuration file (`/sentinel/conf/sentinel.conf` by default)
 * `LC_ALL` to overrides [localisation settings](https://www.gnu.org/software/gettext/manual/html_node/Locale-Environment-Variables.html#Locale-Environment-Variables) (`C` by default, for default)
 
-## Variants
+### Variants
 The Dash Sentinel image should be compatible with most forks, but as configurations may vary here is a list of dedicated image variations:
 * [`lepetitbloc/sentinel-sparks`](https://hub.docker.com/r/lepetitbloc/sentinel-sparks/) built from https://github.com/sparkscrypto/sentinel
 * [`lepetitbloc/sentinel-crowdcoin`](https://hub.docker.com/r/lepetitbloc/sentinel-crowdcoin/) built from https://github.com/crowdcoinChain/sentinelLinux
@@ -60,7 +60,23 @@ In any of these cases, it means the server hang-up on you. You reach the server 
 Change the value of `rpcallowip`.
 > :pushpin: Don't forget you can add more than one `rpcallowip` line in your configuration file.
 
-## Authors
+## Donation
+We love cryptocurrencies, consider making a donation:
+
+| Currency         | Address                                    |
+| ---------------- | ------------------------------------------ |
+| Bitcoin          | 14VRBrDZ47HR1pWjmAnyC5CJCXDkhLeANb         |
+| Ethereum         | 0x1accf4c2bd6010100a2aeac36f336fb963a1716a |
+| Ethereum Classic | 0x3b33bdcc70f06dad7068594a0cd8fbfd7b203aae |
+| Litecoin         | LdH6Sbq5M9p6dqG7GaRvBjoCqJ2CHnz9wr         |
+| Dash             | XuPyN4Ns12qaMKzUjffzeKrCjCL4XYwUCY         |
+| ZCash            | t1U2e4TV6zmg6gXAByBp59NtBP2HsEvY5T5        |
+| Doge             | DKbojeYrguCL2Suh9ujmU49m4QK9DixBXL         |
+
+## License
+MIT
+
+## Credits
 Originally inspired by [@phpgeekfr](https://github.com/phpgeekfr) & [@Phylante](https://github.com/Phylante)
 
 [travis-svg]: https://travis-ci.org/LePetitBloc/sentinel.svg?branch=master
