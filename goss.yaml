@@ -4,6 +4,9 @@ file:
   /sentinel/bin/sentinel.py:
     exists: true
     filetype: file
-  /sentinel/conf/sentinel.conf:
+  /sentinel/sentinel.conf:
     exists: true
     filetype: file
+  /sentinel/database:
+    exists: true
+    filetype: directory
